@@ -65,7 +65,7 @@ export default function Home() {
               name="HCl"
               location="Tokyo, Japan"
               languages="Japanese, English"
-              twitter="@HCl"
+              x="@HCl"
               gitHub="5S"
               ens="0xHCl.dev"
               ethereumAddress="0x1b6CD9541B2821934F8BF946c073C022B3Ba968b"

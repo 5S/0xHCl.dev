@@ -6,7 +6,7 @@ type ProfileSidebarProps = {
   name: string;
   location: string;
   languages: string;
-  twitter: string;
+  x: string;
   gitHub: string;
   ens: string;
   ethereumAddress: string;
@@ -16,7 +16,7 @@ export default function ProfileSidebar({
   name,
   location,
   languages,
-  twitter,
+  x,
   gitHub,
   ens,
   ethereumAddress,
@@ -35,8 +35,8 @@ export default function ProfileSidebar({
           <ProfileItem icon={<Globe />} text={languages} />
           <ProfileItem
             icon={<SiX />}
-            text={twitter}
-            link={`https://x.com/${twitter}`}
+            text={x}
+            link={`https://x.com/${x}`}
           />
           <ProfileItem
             icon={<SiGithub />}

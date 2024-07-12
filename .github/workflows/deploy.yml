@@ -1,0 +1,57 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+    - main
+
+env:
+  AWS_REGION: "ap-northeast-1"
+  AWS_ROLE_NAME: "OIDC-GitHub-5S-0xHCl.dev"
+  AWS_S3_BUCKET: "0xHCl.dev"
+  SOURCE_DIR: "out"
+  DEST_DIR: "."
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        shell: bash
+        run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
+      - name : Cache npm
+        uses: actions/cache@v4
+        id: npm-cache
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+      - name: npm install
+        run: npm install
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+      - name: npm run build
+        run: npm run build
+  
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: arn:aws:iam::${{secrets.AWS_ACCOUNT_ID}}:role/${{env.AWS_ROLE_NAME}}
+        aws-region: ${{env.AWS_REGION}}
+    - name: S3 sync
+      run: aws s3 sync ${{env.SOURCE_DIR}} s3://${{env.AWS_S3_BUCKET}}/${{env.DEST_DIR}}/

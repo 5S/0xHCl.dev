@@ -10,7 +10,7 @@ env:
   AWS_ROLE_NAME: "OIDC-GitHub-5S-0xHCl.dev"
   AWS_S3_BUCKET: "0xHCl.dev"
   SOURCE_DIR: "out"
-  DEST_DIR: "."
+  # DEST_DIR: "dest"
 
 jobs:
   build:
@@ -53,4 +53,4 @@ jobs:
         role-to-assume: arn:aws:iam::${{secrets.AWS_ACCOUNT_ID}}:role/${{env.AWS_ROLE_NAME}}
         aws-region: ${{env.AWS_REGION}}
     - name: S3 sync
-      run: aws s3 sync ${{env.SOURCE_DIR}} s3://${{env.AWS_S3_BUCKET}}/${{env.DEST_DIR}}/
+      run: aws s3 sync ${{env.SOURCE_DIR}} s3://${{env.AWS_S3_BUCKET}}/

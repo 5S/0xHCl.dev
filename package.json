@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "check": "npx @biomejs/biome check --write --unsafe ./ ",
-    "format": "npx @biomejs/biome format --write ./",
-    "lint": "npx @biomejs/biome lint --write --unsafe ./",
+    "check": "npx @biomejs/biome check --write --unsafe ./app",
+    "format": "npx @biomejs/biome format --write ./app",
+    "lint": "npx @biomejs/biome lint --write --unsafe ./app",
     "preinstall": "typesync || :"
   },
   "dependencies": {

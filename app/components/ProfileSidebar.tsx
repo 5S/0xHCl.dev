@@ -33,11 +33,7 @@ export default function ProfileSidebar({
         <ul className="space-y-1">
           <ProfileItem icon={<MapPin />} text={location} />
           <ProfileItem icon={<Globe />} text={languages} />
-          <ProfileItem
-            icon={<SiX />}
-            text={x}
-            link={`https://x.com/${x}`}
-          />
+          <ProfileItem icon={<SiX />} text={x} link={`https://x.com/${x}`} />
           <ProfileItem
             icon={<SiGithub />}
             text={gitHub}

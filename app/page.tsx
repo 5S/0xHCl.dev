@@ -1,4 +1,4 @@
-import ProjectsSection from "@/app/components/ProjectsSection";
+import ProjectsSection from "@/app/components/projects/projects-section";
 import { projects } from "@/app/projects";
 import Script from "next/script";
 

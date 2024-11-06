@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: "プライバシーポリシー - 0xHCl.dev",
   },
   openGraph: {
-    url: "https://0xhcl.dev/privacy",
+    url: "https://0xhcl.dev/privacy-policy",
     title: "プライバシーポリシー - 0xHCl.dev",
     siteName: "プライバシーポリシー - 0xHCl.dev",
   },

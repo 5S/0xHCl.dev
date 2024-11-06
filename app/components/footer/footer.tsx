@@ -2,18 +2,20 @@ export default function Footer() {
   return (
     <footer className="flex flex-col items-center gap-2 py-6 text-[#9198a1]">
       <p>© 2024 HCl.</p>
-      <ul className="flex items-center gap-4">
+      <ul className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
         <li>
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/privacy">プライバシーポリシー</a>
+          <a href="/privacy-policy">Privacy Policy</a>
         </li>
         <li>
-          <a href="/terms">利用規約</a>
+          <a href="/terms-of-service">Terms of Service</a>
         </li>
         <li>
-          <a href="/commerce">特定商取引法に基づく表記</a>
+          <a href="/specified-commercial-transaction-act">
+            Specified Commercial Transactions Act
+          </a>
         </li>
       </ul>
     </footer>

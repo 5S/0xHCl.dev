@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: "特定商取引法に基づく表記 - 0xHCl.dev",
   },
   openGraph: {
-    url: "https://0xhcl.dev/commerce",
+    url: "https://0xhcl.dev/specified-commercial-transaction-act",
     title: "特定商取引法に基づく表記 - 0xHCl.dev",
     siteName: "特定商取引法に基づく表記 - 0xHCl.dev",
   },

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: "サービス利用規約 - 0xHCl.dev",
   },
   openGraph: {
-    url: "https://0xhcl.dev/terms",
+    url: "https://0xhcl.dev/terms-of-service",
     title: "サービス利用規約 - 0xHCl.dev",
     siteName: "サービス利用規約 - 0xHCl.dev",
   },

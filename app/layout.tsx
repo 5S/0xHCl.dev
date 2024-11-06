@@ -1,6 +1,6 @@
-import Footer from "@/app/components/Footer";
-import Header from "@/app/components/Header";
-import ProfileSidebar from "@/app/components/ProfileSidebar";
+import Footer from "@/app/components/footer/footer";
+import Header from "@/app/components/header/header";
+import ProfileSidebar from "@/app/components/profile/profile-sidebar";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -48,7 +48,7 @@ export default function RootLayout({
                   ens="0xHCl.dev"
                   ethereumAddress="0x1b6CD9541B2821934F8BF946c073C022B3Ba968b"
                 />
-                <div className="md:w-3/4">{children}</div>
+                <div className="min-w-0 flex-1">{children}</div>
               </div>
             </div>
           </main>

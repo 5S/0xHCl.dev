@@ -1,4 +1,4 @@
-import ProfileItem from "@/app/components/ProfileItem";
+import ProfileItem from "@/app/components/profile/profile-item";
 import { SiEthereum, SiGithub, SiX } from "@icons-pack/react-simple-icons";
 import { Globe, MapPin } from "lucide-react";
 
@@ -22,11 +22,11 @@ export default function ProfileSidebar({
   ethereumAddress,
 }: ProfileSidebarProps) {
   return (
-    <aside className="mb-8 md:w-1/4">
+    <aside className="mb-8 md:w-[256px] md:flex-shrink-0">
       <img
         src="https://avatars.githubusercontent.com/u/7006470"
         alt="Profile"
-        className="mx-auto h-64 w-64 rounded-full md:mx-0"
+        className="mx-auto aspect-square w-full max-w-[256px] rounded-full md:mx-0"
       />
       <div className="mt-4">
         <h1 className="mb-1 font-bold text-3xl">{name}</h1>

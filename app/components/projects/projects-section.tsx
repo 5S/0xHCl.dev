@@ -1,6 +1,6 @@
 import ProjectCard, {
   type ProjectCardProps,
-} from "@/app/components/ProjectCard";
+} from "@/app/components/projects/project-card";
 
 type ProjectsSectionProps = {
   projects: ProjectCardProps[];

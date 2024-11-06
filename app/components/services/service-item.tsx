@@ -18,7 +18,7 @@ export default function ServiceItem({
         <p className="text-[#9198a1] text-xs">{description}</p>
       </div>
       {price && (
-        <div className="flex w-[100px] flex-shrink-0 justify-end text-[#9198a1] text-xs">
+        <div className="flex w-[100px] flex-shrink-0 justify-start text-[#9198a1] text-xs md:justify-end">
           <p className="flex items-center gap-1">
             <BadgeJapaneseYen />
             <span>{price}</span>

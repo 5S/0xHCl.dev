@@ -43,6 +43,7 @@ export default function RootLayout({
                   name="HCl"
                   location="Tokyo, Japan"
                   languages="Japanese, English"
+                  email="info@0xhcl.dev"
                   x="@HCl"
                   gitHub="5S"
                   ens="0xHCl.dev"

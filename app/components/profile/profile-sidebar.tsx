@@ -1,11 +1,12 @@
 import ProfileItem from "@/app/components/profile/profile-item";
 import { SiEthereum, SiGithub, SiX } from "@icons-pack/react-simple-icons";
-import { Globe, MapPin } from "lucide-react";
+import { Globe, Mail, MapPin } from "lucide-react";
 
 type ProfileSidebarProps = {
   name: string;
   location: string;
   languages: string;
+  email: string;
   x: string;
   gitHub: string;
   ens: string;
@@ -16,6 +17,7 @@ export default function ProfileSidebar({
   name,
   location,
   languages,
+  email,
   x,
   gitHub,
   ens,
@@ -33,6 +35,7 @@ export default function ProfileSidebar({
         <ul className="space-y-1">
           <ProfileItem icon={<MapPin />} text={location} />
           <ProfileItem icon={<Globe />} text={languages} />
+          <ProfileItem icon={<Mail />} text={email} link={`mailto:${email}`} />
           <ProfileItem icon={<SiX />} text={x} link={`https://x.com/${x}`} />
           <ProfileItem
             icon={<SiGithub />}

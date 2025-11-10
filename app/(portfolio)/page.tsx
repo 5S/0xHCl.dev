@@ -1,5 +1,5 @@
-import ProjectsSection from "@/app/components/projects/projects-section";
-import { projects } from "@/app/projects";
+import ProjectsSection from "@/app/(portfolio)/components/projects/projects-section";
+import { projects } from "@/app/(portfolio)/projects";
 import Script from "next/script";
 
 export default function Home() {

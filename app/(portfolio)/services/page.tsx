@@ -1,5 +1,5 @@
-import ServiceItem from "@/app/components/services/service-item";
-import { services } from "@/app/components/services/services-data";
+import ServiceItem from "@/app/(portfolio)/components/services/service-item";
+import { services } from "@/app/(portfolio)/components/services/services-data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

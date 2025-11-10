@@ -1,6 +1,6 @@
-import Footer from "@/app/components/footer/footer";
-import Header from "@/app/components/header/header";
-import ProfileSidebar from "@/app/components/profile/profile-sidebar";
+import Footer from "@/app/(portfolio)/components/footer/footer";
+import Header from "@/app/(portfolio)/components/header/header";
+import ProfileSidebar from "@/app/(portfolio)/components/profile/profile-sidebar";
 import type { Metadata } from "next";
 import "./globals.css";
 

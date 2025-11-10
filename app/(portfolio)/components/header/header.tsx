@@ -1,6 +1,6 @@
 "use client";
 
-import NavItem from "@/app/components/header/nav-item";
+import NavItem from "@/app/(portfolio)/components/header/nav-item";
 import { BookMarked, BookOpen, Rss } from "lucide-react";
 import { usePathname } from "next/navigation";
 

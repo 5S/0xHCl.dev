@@ -1,4 +1,4 @@
-import ProfileItem from "@/app/components/profile/profile-item";
+import ProfileItem from "@/app/(portfolio)/components/profile/profile-item";
 import { SiEthereum, SiGithub, SiX } from "@icons-pack/react-simple-icons";
 import { Globe, Mail, MapPin } from "lucide-react";
 

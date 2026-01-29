@@ -7,6 +7,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "HCl - 0xHCl.dev",
   description: "HCl's personal website",
+  robots: {
+    index: false,
+    follow: false,
+  },
   twitter: {
     title: "HCl - 0xHCl.dev",
     description: "HCl's personal website",
